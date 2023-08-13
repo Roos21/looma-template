@@ -1,0 +1,293 @@
+
+:root{
+    --primary-color :#004aad ;
+    --secondary-color:#da5726;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: rgba(240, 240, 240, 0.35);
+    overflow: hidden;
+}
+header{
+    background: var(--primary-color);
+    height: 40px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+header .looma-header-contact{
+    position: inherit;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    right: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header .lang-and-money{
+    width: 25%;
+    left: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+header .lang-and-money select{
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 600;
+    color:#fff
+}
+
+header .user-panel{
+    width: 35%;
+    left: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .looma-header-contact .contact{
+    width: 75%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+header .looma-header-contact .contact a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+header .looma-header-contact .contact a:first-child{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+header .looma-header-contact .social{
+    width: 25%;
+    height: 100%;
+    left: 75%;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+header .looma-header-contact .social a{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    text-decoration: none;
+    object-fit: cover;
+}
+
+header .looma-header-contact .social a i{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .looma-header-contact .social a:hover{
+    color: var(--secondary-color);
+}
+header .looma-header-contact .user-panel .message{
+    width: 35px;
+    height: 35px;
+}
+
+.user-icon a{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    object-fit: cover;
+}
+.user-icon a i{
+    font-size: 20px;
+}
+ .message i{
+    font-size: 25px;
+    color: #fff;
+}
+header .user-panel div{
+    width: 60px;
+    display: flex;
+} 
+header .user-panel .message span{
+    width: 18px;
+    height: 18px;
+    margin-top: -7px;
+    margin-left: -7px;
+    z-index: 999;
+    border-radius: 50%;
+    font-size: 11px;
+    padding: 2px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    padding:3px;
+    color: var(--secondary-color);
+    background: #fff;
+    z-index: 999;
+    border: 1px solid var(--secondary-color);
+}
+.user-info span{
+    color: #fff;
+    font-weight: 600;
+    margin-right: 10px;
+    text-overflow: ellipsis;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav .nav-tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-tools .logo {
+    margin-left: 50px;
+    width: 150px;
+    height:auto;
+}
+nav .nav-tools .search{
+    border: 2px solid #ddd;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+nav .nav-tools .search input{
+    border: none;
+    height: 100%;
+    width: 370px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 15px;
+    outline: none;
+    font-weight: 600;
+    background: #efefef;
+}
+nav .nav-tools .search input:focus .search{
+    border: none;
+}
+
+nav .nav-tools .search button{
+    border: none;
+    height: 100%;
+    width: 130px;
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+nav .nav-tools .fav-card-whish{
+    width: 320px;
+    height: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-tools .logo img{
+    width: 100%;
+}
+
+nav .nav-tools .fav-card-whish div{
+    width: 60px;
+    display: flex;
+} 
+
+nav .nav-tools .fav-card-whish div i{
+    font-size: 25px;
+}
+
+nav .nav-tools .fav-card-whish div span{
+    width: 18px;
+    height: 18px;
+    background: var(--secondary-color);
+    margin-top: -9px;
+    margin-left: -7px;
+    z-index: 999;
+    border-radius: 50%;
+    font-size: 11px;
+    padding: 2px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    padding:3px;
+    color: #fff;
+}
+
+nav .nav-menu{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+nav .nav-menu ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav-menu ul li{
+    width: 130px;
+    font-size: 20px;
+}
+
+nav .nav-menu ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #444;
+}
+nav .nav-menu ul li a:hover{
+    color: var(--secondary-color);
+}
+.active{
+    color: var(--primary-color);
+}
+
+main{
+    margin: 20px 100px auto;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
