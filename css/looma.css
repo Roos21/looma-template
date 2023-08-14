@@ -191,18 +191,22 @@ nav .nav-tools .search{
     display: flex;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    border-radius: 30px;
 }
 
 nav .nav-tools .search input{
     border: none;
     height: 100%;
-    width: 370px;
+    width: 450px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     padding-left: 15px;
     outline: none;
     font-weight: 600;
-    background: #efefef;
+    background: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
 }
 nav .nav-tools .search input:focus .search{
     border: none;
@@ -211,9 +215,12 @@ nav .nav-tools .search input:focus .search{
 nav .nav-tools .search button{
     border: none;
     height: 100%;
-    width: 130px;
+    width: 50px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     background: var(--secondary-color);
     color: #fff;
+    font-size: 20px;
 }
 
 nav .nav-tools .fav-card-whish{
@@ -269,7 +276,7 @@ nav .nav-menu ul{
 
 nav .nav-menu ul li{
     width: 130px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 nav .nav-menu ul li a{
@@ -285,9 +292,46 @@ nav .nav-menu ul li a:hover{
 }
 
 main{
-    margin: 20px 100px auto;
+    margin: 10px 100px auto;
     background-color: #fff;
     z-index: 999;
     display: flex;
     flex-direction: column;
+}
+.fast-found{
+    display: flex;
+    margin: 10px 100px auto;
+    background: #fff;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.fast-found a{
+    text-decoration: none;
+    color: var(--secondary-color);
+     width: 350px;
+     height: 100%;
+     border-right: 2px solid #ddd;
+}
+
+.fast-found a:last-child{
+    border-right: none
+
+}
+
+.fast-found .col{
+    display: flex;
+    align-items: center;
+}
+.fast-found .col i{
+    font-size: 35px;
+    margin-right: 20px;
+    color: var(--primary-color);
+}
+
+.fast-found .col span{
+    color: #999;
+    text-align: center;
 }
