@@ -22,14 +22,13 @@ a:hover{
 
 
 body{
-    background: rgba(240, 240, 240, 0.35);
+    background: rgba(220, 220, 220, .2);
     overflow-x: hidden;
     overflow-y: auto;
 }
 header{
     background: var(--primary-color);
     height: 40px;
-    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -197,8 +196,8 @@ nav .nav-tools .logo {
 }
 nav .nav-tools .search{
     border: 2px solid #ddd;
-    width: 500px;
-    height: 50px;
+    width: 200px;
+    height: 43px;
     display: flex;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -208,7 +207,7 @@ nav .nav-tools .search{
 nav .nav-tools .search input{
     border: none;
     height: 100%;
-    width: 450px;
+    width: 150px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     padding-left: 15px;
@@ -272,10 +271,7 @@ nav .nav-tools .fav-card-whish div span{
     color: #fff;
 }
 
-nav .nav-menu{
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
+
 nav .nav-menu ul{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -286,14 +282,14 @@ nav .nav-menu ul{
 }
 
 nav .nav-menu ul li{
-    width: 130px;
-    font-size: 17px;
+    width: 100px;
+    font-size: 19px;
 }
 
 nav .nav-menu ul li a{
     text-decoration: none;
     font-weight: 700;
-    color: #444;
+    color: #666;
 }
 nav .nav-menu ul li a:hover{
     color: var(--secondary-color);
@@ -342,7 +338,7 @@ nav .nav-menu ul li a:hover{
 
 main{
     margin: 10px 100px auto;
-    background-color: #fff;
+
     z-index: 999;
     display: flex;
     flex-direction: column;
@@ -354,7 +350,7 @@ main{
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
-
+    background: #fff;
 }
 .div-600 .head{
     display: flex;
@@ -399,8 +395,8 @@ main{
 }
 .div-600 .slide-show{
     height: 90%;
-    width: 590px;
-    background-image: url('../img/produits/dessous-gris.png');
+    width: 610px;
+    background-image: url('../img/products/watch-1.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -466,4 +462,399 @@ main{
 
 .div-600  .counter{
     text-align: center;
+}
+
+.keep-contact{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.keep-contact .benefict{
+    display: flex;
+    align-items: center;
+    background: #eee;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.keep-contact  h2{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 5px;
+
+}
+.keep-contact .benefict img{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.keep-contact h4{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.keep-contact .join{
+    outline: none;
+    border: none;
+    padding: 9px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 600;
+    background: var(--secondary-color);
+
+}
+button{
+    cursor: pointer;
+}
+.keep-contact .signup{
+    outline: none;
+    border: 2px solid #666;
+    padding: 7px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    font-weight: 600;
+
+}
+
+.shipping{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.bw{
+    background: #fff;
+}
+.h-100{
+    height: 100%;
+}
+
+.shipping .new-arrival{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    transition: .5s;
+}
+
+.shipping .new-arrival:hover{
+    background: #eee;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.filters{
+    margin-top: 10px;
+    display: flex;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.filters button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    border: 2px solid #eee;
+    background: rgba(0, 0, 0, 0.05);
+    margin-right: 15px;
+}
+.filters button.active{
+    border: 2px solid #bbb;
+    color: var(--secondary-color);
+}
+
+.shipping .new-arrival .head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.shipping .new-arrival .head i{
+    font-size: 25px;
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+.shipping .new-arrival .new-products{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    margin-left: 20px;
+}
+.shipping .new-arrival .new-products .product{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin: 5px;
+}
+.shipping .new-arrival .new-products .product img{
+    height: 90px;
+    width: 100px;
+}
+.shipping .new-arrival .new-products .product .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shipping .new-arrival .new-products .product .description {
+    font-size: 13px;
+    margin: 2px;
+}
+
+.description i{
+    font-size: 9px;
+    color: #da5726;
+}
+.description h4{
+    color: #777;
+}
+.description span{
+    color: var(--secondary-color);
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.looma-shipping{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: 1100px;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.looma-shipping .product{
+    height: calc(1000px/3);
+    width: 204px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.product .head{
+    height: 210px;
+    display: flex;
+}
+
+.product .head img{
+    height: 95%;
+    width: 90%;
+    left:5%;
+    right: 5%;
+    top: 5%;
+    position: relative;
+    transition: .3s;
+}
+
+.looma-shipping .product:hover .head img{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.looma-shipping .product .product-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.looma-shipping .product .product-description .price{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.new-price{
+    color: var(--secondary-color);
+}
+
+.old-price{
+    color: #aaa;
+    text-decoration: line-through;
+}
+.rate{
+    color: var(--secondary-color);
+}
+.looma-shipping .product .product-description h3{
+    font-size: 23px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+.looma-shipping .product .head .action{
+    z-index: 9999;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: none; 
+}
+.looma-shipping .product:hover .head .action{
+    margin-left: -50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+}
+
+.looma-shipping .product .head .action .heart{
+    color: var(--secondary-color);
+    margin-bottom: 167px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    font-size: 20px;
+    margin-left: -20px;
+    padding: 5px 8px;
+}
+
+.looma-shipping .product .head .action .panier{
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: var(--secondary-color);
+    border-radius: 30px;
+    margin-left: -80px;
+}
+.looma-shipping .product .head .action .panier span{
+    margin-left: 5px;
+}
+
+.cl-text{
+    font-size: 28pt;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.cl-text:after{
+    content: '';
+    position: absolute;
+    border: 3px solid var(--secondary-color);
+    margin-top: 60px;
+    width: 50px;
+    text-align: center;
+    margin-left: -180px;
+}
+.swiper{
+width: 100%;
+padding: 20px;
+}
+
+
+.client{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #7d2ae8;
+    margin: 0;
+}
+
+.client .card .image img{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card{
+    position: relative;
+    border-radius: 20px;
+    background: #fff;
+    margin: 20px 0;
+    width: 250px;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    background: var(--primary-color);
+    border-radius: 20px 20px 0 0;
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.card .media-icons i{
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.9;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.card .media-icons i:hover{
+    opacity: 1 ;
+}
+
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card .name-profession .name{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card .name-profession .profession{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card .rate{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
 }
