@@ -107,6 +107,78 @@
 
     </nav>
     <main>
+        <div class="product-detail">
+            <div class="prod">
+                <div class="product-images">
+                    <div class="active-image">
+                        <img src="img/products/clothes-1.jpg" alt="">
+                    </div>
+                    <div class="others-images">
+                        <img src="img/products/clothes-1.jpg" alt="">
+                        <img src="img/products/clothes-2.jpg" alt="">
+                        <img src="img/products/clothes-3.jpg" alt="">
+                        <img src="img/products/clothes-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="product-descriptions">
+                    <h1>Pret a porte</h1>
+                    <div class="stories-actions">
+                        <button><i class="fa-solid fa-thumbs-up"></i></button>
+                        <button><i class="fa-solid fa-thumbs-down"></i></button>
+                        <button><i class="fa-solid fa-message"></i></button>
+                        <button><i class="fa-solid fa-share-nodes"></i></button>
+
+                    </div>
+                    <div class="starts">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4 class="text-secondary">Prix : $ 50</h4>
+                    <h4 class="text-primary">Nouveau Prix : $ 50</h4>
+                    <h3>Apropos du l'article</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deserunt voluptas ad quae vitae est! Corporis, reprehenderit voluptas necessitatibus esse, voluptatibus deserunt harum incidunt rerum sapiente, ab placeat tempora vero.</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deserunt voluptas ad quae vitae est! Corporis, reprehenderit voluptas necessitatibus esse, voluptatibus deserunt harum incidunt rerum sapiente, ab placeat tempora vero.</p>
+                    <div class="buy-and-card-btn">
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Ajouter au panier
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-dollar"></i>
+                            Acheter maintenant
+                        </button>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="text-product">
+                <div class="text-product-title">
+                    <button id="product-description"
+                            data-text="Description du produit ors du click"
+                            >
+                        Description
+                    </button>
+                    <button id="product-detail"
+                            data-text="Details du produits">
+                        Détails
+                    </button>
+                    <button id="product-guide"
+                            data-text="Guide d'utilisation">
+                        Guide d'utilisation
+                    </button>
+                    <button id="product-comments"
+                            data-text="Avis des clients">
+                        Avis des clients
+                    </button>
+                </div>
+                <div id="text-panel">
+
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-head">
@@ -221,6 +293,7 @@
             }
         });
     </script>
+    <script src="js/product-view.js"></script>
 </body>
 
 </html>
